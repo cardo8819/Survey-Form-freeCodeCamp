@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1 id="title">Home Buyer Survey</h1>
+            <p id="description">Thank you for agreeing to fill out this survey. All data collected will be used
+                annoymously and will not be sold with third parties.</p>
+        </div>
+
+        <form action="" id="survey-form">
+            <div class="form-section">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="First Name" required>
+            </div>
+            <div class="form-section">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-section">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" min="18" max="80" placeholder="Age" id="number" required>
+            </div>
+            <div class="form-section radio">
+                <p class="question">Are you a first time buyer?</p>
+                <div>
+                    <input type="radio" name="option" value="yes" id="yes" checked><label for="yes">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" name="option" value="no" id="no"><label for="no">No</label>
+                </div>
+            </div>
+            <div class="form-section">
+                <p class="question">What is your current occupation?</p>
+                <select name="occupation" id="dropdown">
+                    <option value="">Select an option</option>
+                    <option value="employedFt">Employed full-time</option>
+                    <option value="employedPt">Employed part-time</option>
+                    <option value="student">Student</option>
+                    <option value="PreferNo">Prefer not to say</option>
+                </select>
+            </div>
+            <div class="form-section checkbox">
+                <p class="question">What type of house would you be interested in viewing?</p>
+
+                <div>
+                    <input type="checkbox" value="flat"><label for="">Flat</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="cottage"><label for="">Cottage</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="terrace"><label for="">Terraced</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" value="semi-detached"><label for="">Semi-detached</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="detached"><label for="">Detached</label>
+                </div>
+
+
+            </div>
+            <div class="form-section">
+                <p class="question">Any requirements for your search please let us know.</p>
+                <textarea name="" id="textBox" rows="5"
+                    placeholder="Enter your housing requirements here..."></textarea>
+            </div>
+            <div class="form-section">
+              <input type="submit" id="submit"></input>
+            </div>
+                
+            
+        </form>
+    </div>
+</body>
+
+</html>

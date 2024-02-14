@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-size: 1rem;
+    background-color: #f6f8fa;
+    color: rgb(36, 34, 31);
+    font-family: 'Roboto', sans-serif
+}
+
+h1{font-size: 2.5rem;}
+h2{font-size: 2rem;}
+h3{font-size: 1.75rem;}
+h4{font-size: 1.5rem;}
+h5{font-size: 1.25rem;}
+h6{font-size: 1rem;}
+
+#container{
+    padding: 20px 0px 0px 0px;
+}
+
+#title{
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+#description{
+    font-size: 1.2rem;
+    padding: 20px 30px;
+    font-style: italic;
+    font-weight: 400;
+    color: #003366;
+}
+
+#survey-form{
+    padding: 15px 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(10deg, #003366 25%, rgb(238, 4, 4)100%);
+    color: white;
+    font-size: 1.25rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+/* #003366; */
+#header{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.form-section{
+    margin: 20px 0;
+}
+
+.form-section label{
+    display: block;
+    margin-bottom: 8px;
+}
+.form-section input, textarea, select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: grey;
+    border-width: 1px;
+    font-size: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+select, option, textarea{
+    font-size: 1.25rem;
+    font-family: "Roboto", sans-serif; 
+}
+
+input[type= "radio"], input[type= "checkbox"]{
+    height: 22px;
+    width: 22px;
+    vertical-align: text-bottom;
+    margin-right: 7px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+}
+
+.question{
+    margin: 15px 0;
+}
+
+.radio label, .checkbox label{
+    display: inline-block;
+}
+
+input[type="submit"]{
+    width: 100%;
+    background-color: rgb(210, 15, 38);
+    color: #EFEFEF;
+    border: 1px solid transparent;
+    display: block;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    padding: 15px;
+    font-size: 1.2rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+textarea{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100px;
+}
